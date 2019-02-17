@@ -1,0 +1,15 @@
+<div id="primeContainer">
+  <p>
+    prime works! - This is a Custom component<br/>
+    Custom Variable {{myVar}}
+  </p>
+
+  <!-- Binding needs to be performed to assign HTML attribute value -->
+  <!-- Source to Target binding -->
+  <input type="text" [value]="textData" (input)="assignBox($event)"/>&nbsp;&nbsp;
+
+  <button (click)="invokeSource($event)" >Click Me</button>
+
+  <!-- Controller to Target Data binding -->
+  <p>BoxIt {{boxtext}}</p>
+</div>
