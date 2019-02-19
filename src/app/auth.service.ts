@@ -13,7 +13,7 @@ export class AuthService {
     return this._loggedIn;
   }
   set loggedIn(status: boolean){
-    this._loggedIn=status
+    this._loggedIn=status;
   }
   getUserDetails (username: string, password: string){
     //POST these details to API Server and return User info if correct
